@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #150e64;
+  min-height: 100vh;
+  font-family: "Lato", sans-serif;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  -webkit-box-align: center;
+          align-items: center;
+  padding: 0 10vw;
+  box-shadow: inset 0 0 5vw 10vw rgba(21, 14, 100, 0.34);
+}
+
+main {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+}
+
+figure {
+  scroll-snap-align: start;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+          align-items: flex-end;
+
+}
+
+figure figcaption {
+  color: #fff;
+  position: relative;
+  padding: 1em 0.5em;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.top-left {
+  position: absolute;
+  top: 0rem;
+  left: 2rem;
+  color:#fff;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+#one {
+  background-image: url(https://pythonchannel.com/static/images/codecamp/img/car/c6.jpg);
+  
+}
+#two {
+  background-image: url(https://pythonchannel.com/static/images/codecamp/img/car/c1.jpg);
+}
+
+#three {
+  background-image: url(https://pythonchannel.com/static/images/codecamp/img/car/c2.jpg);
+}
+
+#four {
+  background-image: url(https://pythonchannel.com/static/images/codecamp/img/car/c3.jpg);
+}
+
+#five {
+  background-image: url(https://pythonchannel.com/static/images/codecamp/img/car/c4.jpg);
+}
+
+#six {
+  background-image: url(https://pythonchannel.com/static/images/codecamp/img/car/c5.jpg);
+}
